@@ -1,0 +1,151 @@
+.payment-form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form {
+  width: 100%;
+}
+
+.payment-form h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.payment-method-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-method-option {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.payment-method-option:hover {
+  border-color: #1890ff;
+}
+
+.payment-method-option.active {
+  border-color: #1890ff;
+  background-color: #f0f9ff;
+}
+
+.payment-method-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.card-details {
+  margin: 1.5rem 0;
+}
+
+.card-details h4 {
+  margin-bottom: 1rem;
+  color: #595959;
+  font-size: 1rem;
+}
+
+.pay-later-notice {
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  color: #237804;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.pay-later-notice p {
+  margin: 0.5rem 0;
+}
+
+.card-element {
+  border: 1px solid #d9d9d9;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.card-element--focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.card-element--invalid {
+  border-color: #ff4d4f;
+}
+
+.pay-button {
+  display: block;
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.pay-button:hover {
+  background-color: #40a9ff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.2);
+}
+
+.pay-button:active {
+  transform: translateY(0);
+}
+
+.pay-button:disabled {
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.error-message {
+  color: #ff4d4f;
+  margin: -10px 0 15px;
+  font-size: 14px;
+  text-align: left;
+  min-height: 22px;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+  .payment-form-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .payment-form h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pay-button {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+}

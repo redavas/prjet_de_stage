@@ -1,0 +1,253 @@
+/* OrderSuccess.css */
+.order-success {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.success-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  margin-top: 2rem;
+}
+
+.success-icon {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.success-icon i {
+  font-size: 5rem;
+  color: #28a745;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.order-number, .order-date {
+  text-align: center;
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.order-summary {
+  margin: 2.5rem 0;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.order-summary h3 {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.order-items {
+  padding: 1rem;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.item-details h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.item-details p {
+  margin: 0.25rem 0;
+  color: #666;
+}
+
+.item-price {
+  font-weight: 600;
+  color: #333 !important;
+}
+
+.item-subtotal {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  min-width: 100px;
+  text-align: right;
+}
+
+.order-totals {
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.total-row:last-child {
+  margin-bottom: 0;
+}
+
+.total {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  padding-top: 0.75rem;
+  border-top: 1px solid #ddd;
+  margin-top: 0.75rem;
+}
+
+.shipping-address, .payment-info, .customer-service {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.shipping-address h3, .payment-info h3, .customer-service h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.shipping-address p, .payment-info p, .customer-service p {
+  margin: 0.5rem 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.payment-info .status {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  font-weight: 500;
+}
+
+.status-completed {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline:hover {
+  background-color: #f8f9fa;
+}
+
+.customer-service {
+  background-color: #e9ecef;
+  border-left: 4px solid #007bff;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.error {
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .item-image {
+    margin-bottom: 1rem;
+  }
+  
+  .item-subtotal {
+    margin-top: 1rem;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
